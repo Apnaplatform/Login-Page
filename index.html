@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="shooting-star" aria-hidden="true"></div>
+      <div class="system-orbits" aria-hidden="true">
+        <div class="orbit orbit-1">
+          <span class="planet planet-1"></span>
+        </div>
+        <div class="orbit orbit-2">
+          <span class="planet planet-2"></span>
+        </div>
+        <div class="orbit orbit-3">
+          <span class="planet planet-3"></span>
+        </div>
+        <div class="orbit orbit-4">
+          <span class="planet planet-4"></span>
+        </div>
+      </div>
+      <div class="bubbles" aria-hidden="true">
+        <span class="bubble b1"></span>
+        <span class="bubble b2"></span>
+        <span class="bubble b3"></span>
+        <span class="bubble b4"></span>
+        <span class="bubble b5"></span>
+        <span class="bubble b6"></span>
+      </div>
+      <div class="bg-orb orb-1" aria-hidden="true"></div>
+      <div class="bg-orb orb-2" aria-hidden="true"></div>
+      <div class="bg-orb orb-3" aria-hidden="true"></div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+
+      <section class="login-card" aria-label="Login">
+        <span class="shine" aria-hidden="true"></span>
+        <header class="card-header">
+          <div class="logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">Login Page</span>
+          </div>
+          <div class="pill">Secure Access</div>
+          <h1>Sign in to your workspace</h1>
+          <p class="subtitle">Welcome back. Let’s get you into your dashboard.</p>
+        </header>
+
+        <form class="login-form" novalidate>
+          <div class="field">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              autocomplete="username"
+              placeholder=" "
+              required
+            />
+            <label for="email">Email or username</label>
+            <span class="field-line"></span>
+          </div>
+
+          <div class="field">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder=" "
+              required
+            />
+            <label for="password">Password</label>
+            <button type="button" class="toggle-pass" aria-label="Show password">
+              <span class="eye"></span>
+            </button>
+            <span class="field-line"></span>
+          </div>
+
+          <p class="error-text" role="alert" aria-live="polite"></p>
+
+          <button type="submit" class="login-btn">
+            <span class="btn-text">Login</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <div class="links">
+            <a href="#" class="link">Forgot Password?</a>
+            <a href="#" class="link">Sign Up</a>
+          </div>
+        </form>
+
+        <div class="success-state" aria-live="polite">
+          <div class="success-ring"></div>
+          <p>Login Successful</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
